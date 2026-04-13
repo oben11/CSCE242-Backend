@@ -1,0 +1,56 @@
+[
+  {
+    "id": 0,
+    "img": "/location/0.jpg",
+    "alt": "Downtown retail storefront",
+    "name": "Downtown Flagship",
+    "address": "123 Main Street, Downtown",
+    "hours": "Mon-Fri: 6am-8pm, Sat-Sun: 7am-9pm",
+    "phone": "(555) 123-4567"
+  },
+  {
+    "id": 1,
+    "img": "/location/1.jpg",
+    "alt": "Riverside cafe location",
+    "name": "Riverside Cafe",
+    "address": "456 River Road, Riverside",
+    "hours": "Mon-Fri: 6:30am-7pm, Sat-Sun: 7am-8pm",
+    "phone": "(555) 234-5678"
+  },
+  {
+    "id": 2,
+    "img": "/location/2.jpg",
+    "alt": "University district coffee shop",
+    "name": "University District",
+    "address": "789 College Ave, University District",
+    "hours": "Mon-Sun: 5:30am-10pm",
+    "phone": "(555) 345-6789"
+  },
+  {
+    "id": 3,
+    "img": "/location/3.jpg",
+    "alt": "Westside retail location",
+    "name": "Westside Location",
+    "address": "321 West Boulevard, Westside",
+    "hours": "Mon-Fri: 6am-7pm, Sat-Sun: 7am-8pm",
+    "phone": "(555) 456-7890"
+  },
+  {
+    "id": 4,
+    "img": "/location/4.jpg",
+    "alt": "Airport terminal cafe location",
+    "name": "Airport Terminal",
+    "address": "Terminal B, Gate 12, Airport",
+    "hours": "Mon-Sun: 5am-11pm",
+    "phone": "(555) 567-8901"
+  },
+  {
+    "id": 5,
+    "img": "/location/5.jpg",
+    "alt": "Northgate shopping center retail store",
+    "name": "Northgate Shopping Center",
+    "address": "654 North Plaza, Northgate",
+    "hours": "Mon-Sat: 8am-9pm, Sun: 9am-7pm",
+    "phone": "(555) 678-9012"
+  }
+]

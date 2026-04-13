@@ -1,0 +1,219 @@
+:root {
+    --espresso: #2C1810;
+    --coffee-dark: #4A3428;
+    --latte: #D4A574;
+    --cream: #F5F1E8;
+    --accent: #C17C4A;
+    --bronze: #CD7F32;
+    --silver: #C0C0C0;
+    --gold: #FFD700;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--cream);
+            color: var(--espresso);
+            margin: 0;
+            line-height: 1.6;
+            background-image: radial-gradient(circle at 2px 2px, rgba(74, 52, 40, 0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+            min-height: 100-screen;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 4rem 1.5rem 3rem;
+            text-align: center;
+            max-width: 56rem;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .logo-icon {
+            width: 3rem;
+            height: 3rem;
+            color: var(--accent);
+            margin: 0 auto 1rem;
+        }
+
+        header h1, header h2 {
+            font-family: 'Modak';
+            font-weight: 250;
+            margin: 0rem;
+            letter-spacing: -0.025em;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: -2rem;
+        }
+
+        header h2 {
+            font-weight: 0;
+            font-size: 1.75rem;
+        }
+
+        .divider {
+            height: 0.25rem;
+            width: 5rem;
+            background-color: var(--bronze);
+            margin: 0 auto 1.5rem;
+            border-radius: 9999px;
+        }
+
+        .subtitle {
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--slate-500);
+            margin: 0;
+        }
+
+        main {
+            flex-grow: 1;
+            width: 100%;
+            max-width: 64rem;
+            margin: 0 auto;
+            padding: 0 1.5rem 5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(74, 52, 40, 0.1);
+            padding: 2rem;
+            border-radius: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(44, 24, 16, 0.08);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .icon-container {
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bg-orange { background-color: #ffedd5; color: #9a3412; }
+        .bg-stone { background-color: #e7e5e4; color: #292524; }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .card-description {
+            color: var(--slate-600);
+            margin-bottom: 1.5rem;
+        }
+
+        .api-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .api-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 0.5rem;
+            border: 1px solid #e7e5e4;
+        }
+
+        .api-badge:hover {
+            background: var(--accent);
+            cursor: pointer;
+        }
+
+        .api-badge {
+            background: var(--espresso);
+            color: var(--cream);
+            font-family: monospace;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        code {
+            font-size: 0.875rem;
+            color: var(--espresso);
+        }
+
+        .btn-coffee {
+            display: block;
+            background-color: var(--accent);
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.2s;
+        }
+
+        .btn-coffee:hover {
+            background-color: var(--espresso);
+        }
+
+        footer {
+            padding: 2.5rem 1rem;
+            text-align: center;
+            color: var(--slate-400);
+            font-size: 0.875rem;
+            border-top: 1px solid rgba(74, 52, 40, 0.1);
+            margin-top: auto;
+        }
+
+        .footer-links a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }

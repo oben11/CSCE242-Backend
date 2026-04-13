@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ollie's Coffee Co. | API Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ollie's</h1>
+        <h2>Coffee Co.</h2>
+        <div class="divider"></div>
+        <p class="subtitle">Developer Portal & API</p>
+    </header>
+
+    <main>
+        <div class="grid">
+            
+            <!-- Locations API Card -->
+            <div class="glass-card">
+                <div>
+                    <div class="card-header">
+                        <div class="icon-container bg-orange">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title hero-text">Our Locations</h3>
+                    </div>
+                    <p class="card-description">Access a full list of our artisanal cafe locations. Use seeds to paginate or filter specific roasting hubs.</p>
+                    
+                    <div class="api-list">
+                        <div class="api-item">
+                            <span onclick="window.location.href='/api/locations'" class="api-badge">GET</span>
+                            <code>/api/locations</code>
+                        </div>
+                        <div class="api-item">
+                            <span onclick="window.location.href='/api/locations'" class="api-badge">GET</span>
+                            <code>/api/locations/:seed</code>
+                        </div>
+                    </div>
+                </div>
+                <a href="/api/locations" class="btn-coffee">
+                    Explore Locations
+                </a>
+            </div>
+
+            <!-- Merchandise API Card -->
+            <div class="glass-card">
+                <div>
+                    <div class="card-header">
+                        <div class="icon-container bg-stone">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title hero-text">Merchandise</h3>
+                    </div>
+                    <p class="card-description">Browse our collection of hand-crafted mugs, apparel, and limited-edition coffee beans.</p>
+                    
+                    <div class="api-list">
+                        <div class="api-item">
+                            <span onclick="window.location.href='/api/merchandise'" class="api-badge">GET</span>
+                            <code>/api/merchandise</code>
+                        </div>
+                        <div class="api-item">
+                            <span onclick="window.location.href='/api/merchandise'" class="api-badge">GET</span>
+                            <code>/api/merchandise/:id</code>
+                        </div>
+                    </div>
+                </div>
+                <a href="/api/merchandise" class="btn-coffee">
+                    View Catalog
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Ollie's Coffee Co. • Hand-roasted API responses. • CSCE-242 with Portia Plante @UofSC</p>
+
+    </footer>
+
+</body>
+</html>

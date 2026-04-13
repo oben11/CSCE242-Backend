@@ -1,0 +1,28 @@
+{
+  "name": "yetanothercsce242repo",
+  "version": "1.0.0",
+  "description": "hello world",
+  "homepage": "https://github.com/oben11/yetanotherCSCE242repo#readme",
+  "bugs": {
+    "url": "https://github.com/oben11/yetanotherCSCE242repo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oben11/yetanotherCSCE242repo.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "joi": "^18.1.2",
+    "multer": "^2.1.1",
+    "nodemon": "^3.1.14"
+  }
+}
