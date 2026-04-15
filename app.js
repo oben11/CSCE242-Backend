@@ -104,6 +104,54 @@ const validateLocation = (location) => {
   return schema.validate(location);
 };
 
+// Update a location
+app.put("/api/locations/:id", upload.single("image"), (req, res) => {
+  console.log("PUT request received for /api/locations/:id");
+
+  const id = parseInt(req.params.id);
+  const location = locations.find((l) => l.id === id);
+
+  if (!location) {
+    return res.status(404).send("Location not found");
+  }
+
+  const result = validateLocation(req.body);
+  if (result.error) {
+    return res.status(400).send(result.error.details[0].message);
+  }
+
+  location.alt = req.body.alt;
+  location.name = req.body.name;
+  location.address = req.body.address;
+  location.hours = req.body.hours;
+  location.phone = req.body.phone;
+
+  if (req.file) {
+    location.img = `/images/${req.file.originalname}`;
+  }
+
+  res.send(location);
+});
+
+// Delete a location
+app.delete("/api/locations/:id", (req, res) => {
+  console.log("DELETE request received for /api/locations/:id");
+
+  const id = parseInt(req.params.id);
+  const locationIndex = locations.findIndex((l) => l.id === id);
+
+  if (locationIndex === -1) {
+    return res.status(404).send("Location not found");
+  }
+
+  const deletedLocation = locations.splice(locationIndex, 1)[0];
+  res.send(deletedLocation);
+});
+
+
+
+
+
 // Serve all merchandise
 app.get("/api/merchandise", (req, res) => {
   console.log("GET request received for /api/merchandise");
