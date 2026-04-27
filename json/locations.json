@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "img": "/location/0.jpg",
+    "img": "/images/location/0.jpg",
     "alt": "Downtown retail storefront",
     "name": "Downtown Flagship",
     "address": "123 Main Street, Downtown",
@@ -10,7 +10,7 @@
   },
   {
     "id": 1,
-    "img": "/location/1.jpg",
+    "img": "/images/location/1.jpg",
     "alt": "Riverside cafe location",
     "name": "Riverside Cafe",
     "address": "456 River Road, Riverside",
@@ -19,7 +19,7 @@
   },
   {
     "id": 2,
-    "img": "/location/2.jpg",
+    "img": "/images/location/2.jpg",
     "alt": "University district coffee shop",
     "name": "University District",
     "address": "789 College Ave, University District",
@@ -28,7 +28,7 @@
   },
   {
     "id": 3,
-    "img": "/location/3.jpg",
+    "img": "/images/location/3.jpg",
     "alt": "Westside retail location",
     "name": "Westside Location",
     "address": "321 West Boulevard, Westside",
@@ -37,7 +37,7 @@
   },
   {
     "id": 4,
-    "img": "/location/4.jpg",
+    "img": "/images/location/4.jpg",
     "alt": "Airport terminal cafe location",
     "name": "Airport Terminal",
     "address": "Terminal B, Gate 12, Airport",
@@ -46,7 +46,7 @@
   },
   {
     "id": 5,
-    "img": "/location/5.jpg",
+    "img": "/images/location/5.jpg",
     "alt": "Northgate shopping center retail store",
     "name": "Northgate Shopping Center",
     "address": "654 North Plaza, Northgate",
